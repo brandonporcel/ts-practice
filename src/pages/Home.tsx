@@ -40,7 +40,7 @@ export default function Home() {
 					title="YouTube video playerrrrr"
 					style={{ border: '0' }}
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					data-allowfullscreen
+					// data-allowfullscreen
 				></iframe>
 
 				{cosos.map((el) => {
