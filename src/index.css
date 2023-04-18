@@ -6,3 +6,65 @@ body {
 	/* padding: 10px; */
 	/* height: 100%; */
 }
+
+img {
+	width: 100%;
+	height: auto;
+}
+.appear {
+	animation-name: appear;
+	animation-duration: 2s;
+}
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.marquee {
+	animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	50% {
+		transform: translate3d(-50vw, 0, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+.marqueeSon {
+	left: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	animation: marquee2 300s linear infinite;
+}
+@keyframes marquee2 {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	50% {
+		transform: translate3d(-50vw, 0, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.grad {
+	color: #0000;
+	width: min-content;
+	-webkit-background-clip: text;
+	--tw-gradient-from: #176feb;
+	--tw-gradient-to: #ff80ff;
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, #176feb00);
+	background-image: linear-gradient(to right, var(--tw-gradient-stops));
+	line-height: 1.75rem;
+}
